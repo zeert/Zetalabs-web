@@ -32,13 +32,43 @@
 |
 */
 
+Route::get('site.index', array('as' => 'home', 'do' => function()
+
+	{
+
+		return View::make('site.index');
+
+	}));
+
+Route::get('servicios', array('as' => 'servicios', 'do' => function()
+
+	{
+
+		return View::make('site.servicios');
+
+	}));
+
+
+
 Route::get('/', function()
 {
-	return Redirect::to('test/bienvenida');
+
+	return Redirect::to_route('home');
+
+});
+
+Route::get('home', function()
+{
+
+	return Redirect::to_route('home');
+
 });
 
 
-Route::controller('test');
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
