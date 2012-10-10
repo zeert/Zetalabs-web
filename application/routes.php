@@ -38,7 +38,7 @@ Route::get('/', function()
 });
 
 
-
+Route::controller('test');
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
