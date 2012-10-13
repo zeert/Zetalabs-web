@@ -32,7 +32,7 @@
 |
 */
 
-Route::get('site.index', array('as' => 'home', 'do' => function()
+/*Route::get('site.index', array('as' => 'home', 'do' => function()
 
 	{
 
@@ -46,10 +46,10 @@ Route::get('servicios', array('as' => 'servicios', 'do' => function()
 
 		return View::make('site.servicios');
 
-	}));
+	})); */
 
-
-
+Route::controller('site');
+/*
 Route::get('/', function()
 {
 
@@ -63,7 +63,7 @@ Route::get('home', function()
 	return Redirect::to_route('home');
 
 });
-
+*/
 
 
 

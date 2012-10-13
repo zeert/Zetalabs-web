@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General ******************/
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.page{
+	padding-top:40px;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Oswald', sans-serif;
+}
+
+/* Nav Bar ******************/
+.navbar .nav a{
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	letter-spacing:1px;
+}
+.navbar .nav .active a, .navbar .nav a:hover{
+	color:#c1001f !important;
+}
+.navbar .nav, .navbar .btn-navbar {
+	margin-top: 16px;
+}
+.nav-pills > li a{
+	color:#333;
+}
+.nav-pills > li a:hover{
+	color:#c1001f;
+}
+.nav-pills > li.active a{
+	background-color:#c1001f !important;
+	font-weight:bold;
+}
+/* Caraousel ******************/
+.project-carousel {
+	background: url(../img/bg-dark.jpg);
+	margin-top: 71px;
+	color: #FFF;
+}
+.project-carousel p {
+	line-height: 20px;
+}
+.carousel-control {
+	width: 32px;
+	height: 32px;
+	top: 40%;
+	position: absolute;
+	text-indent: -9999px;
+	margin-top: 0;
+}
+.left.carousel-control {
+	background: url(../img/arr-left.png) no-repeat;
+	left: 15px;
+}
+.left.carousel-control:hover {
+	background: url(../img/arr-left-hover.png) no-repeat;
+}
+.right.carousel-control {
+	background: url(../img/arr-right.png) no-repeat;
+	right: 15px;
+}
+.right.carousel-control:hover {
+	background: url(../img/arr-right-hover.png) no-repeat;
+}
+/* Pages/Sections ******************/
+.page-title {
+	text-shadow: 0 1px 0 #FFF;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 50px;
+	background: url(../img/title_sep.png) repeat-x bottom;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	color:#c1001f;
+}
+.to-top {
+	float: right;
+	color: #333;
+	position: absolute;
+	top: 23%;
+	right: 0;
+}
+#contact {
+	background-color: #ddd;
+	border-top: 1px solid #CCC;
+	margin-top: 41px;
+	padding-bottom: 15px;
+}
+.action {
+	background-color: #F9F9F9;
+	margin-bottom: 40px !important;
+	position: relative;
+	z-index: 50;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.layers {
+	box-shadow: 0 1px 1px transparent, /* The top layer shadow */ 0 8px 0 -5px #F9F9F9, /* The second layer */ 0 8px 1px -4px rgba(0, 0, 0, 0.15), /* The second layer shadow */ 0 17px 0 -10px #F9F9F9, /* The third layer */ 0 17px 1px -9px rgba(0, 0, 0, 0.15);
+}
+.action-inside {
+	padding: 20px;
+}
+.action .action-text {
+	margin-right: 40px;
+	width: 50%;
+}
+pre {
+	background: #222;
+	border-bottom: 1px solid white;
+	border-top: 1px solid black;
+	-webkit-box-shadow: black 0 1px 10px inset;
+	-moz-box-shadow: black 0 1px 10px inset;
+	box-shadow: black 0 1px 10px inset;
+	text-shadow: black 0 -1px 1px;
+	border-radius: 5px;
+	color: #EE8;
+	display: block;
+	font-family: 'Monaco', 'Anonymous Pro', sans-serif;
+	font-size: 11px;
+	margin-top: 2px;
+	margin-bottom: 5px;
+	padding: 15px;
+}
+/* About - Team Section */
+.team-bigger-pic {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	display: block;
+	float: left
+}
+/* Footer ******************/
+.social a {
+	text-align: center
+}
+#footer {
+	background: url(../img/bg-dark.jpg);
+	padding: 15px 0;
+	color: #CCC;
+	border-top: 5px solid #333;
+}
+#footer .footer-links {
+	text-align: right
+}
+#footer a {
+	font-size: 11px;
+	color: #999
+}
+#footer a:hover {
+	color: #FFF;
+}
+
+/* iPhone (portrait) ----------- */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	#contact, #footer, .project-carousel {
+		background: none !important
+	}
+	.project-carousel {
+		margin-top: 0px;
+	}
+	#footer .copyright, #footer .footer-links {
+		text-align: center
+	}
+}

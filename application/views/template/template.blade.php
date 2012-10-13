@@ -1,151 +1,635 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="es"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="es"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="es"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="es"> <!--<![endif]-->
-
+<html>
 <head>
+	<!-- Title -->
+	<title>Debo cambiar el titulo</title>
+	
+	<!-- Meta Tags -->
 	<meta charset="utf-8">
-	<title>@yield('titulo')</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Somos expertos en soluciones tecnologicas para pequeñas y medianas empresas. Especialistas en desarrollo de aplicaciones web, sitios e implementacion de servidores">
-    <meta name="keywords" content="desarrollo, tecnologia, web, sistemas, servidores, firewall, linux, mac, apple, clientes, servicios, asesorias" />
-	<meta name="author" content="Zetalabs Chile">
-
-	<!-- Custom css -->
-	<?php echo HTML::style('css/style.min.css'); ?>
-	<?php echo HTML::style('css/font-awesome/font-awesome.css'); ?>
-	<!--[if IE 7]>
-		<?php echo HTML::style('css/font-awesome/font-awesome-ie7.css'); ?>
-	<![endif]-->
-
-	<!-- Carga Open Sans desde Google Font -->
-	<?php echo HTML::style('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800'); ?>
-
-
-	<!-- HTML5 shim,  soporte html5  en IE6-8 -->
-	<!--[if lt IE 9]>
-		<?php echo HTML::script('http://html5shim.googlecode.com/svn/trunk/html5.js'); ?>
-	<![endif]-->
-
-	<?php echo HTML::script('http://code.jquery.com/jquery-latest.js'); ?>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
-	<style type="text/css">
-
-		#map {
-    height: 200px; }
-
-	</style>
-</head>
-
-
-
-<header id="header">
-
-		<!-- Navigation
-		================================================== -->
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="index-2.html">
-						<b>Your</b>Site
-					</a>
-@section('navegacion')
-
-					<div class="nav-collapse fr">
-						<ul class="nav">
-							<li class="active"><?php echo HTML::link('home', 'Home'); ?></li>
-							<li><a href="work.html">Servicios</a></li>
-							<li><a href="about.html">Clientes</a></li>
-							<li><a href="plans.html">Proyectos</a></li>
-							<li><a href="faq.html">Preguntas</a></li>
-							<li><a href="contact.html">Contacto</a></li>
-							<li><button class="btn btn-primary">Clientes</button></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div><!-- end .container -->
-			</div><!-- end .navbar-inner -->
-		</div><!-- end .navbar -->
-
-@yield_section
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114x114-precomposed.png">
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72x72-precomposed.png">
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57x57-precomposed.png">
+	
+	<!-- Google Web Fonts -->
+	<?php echo HTML::style('http://fonts.googleapis.com/css?family=Oswald:300'); ?>
+	
+	
+	<!-- Bootstrap CSS -->
+	<?php echo HTML::style('css/bootstrap.min.css'); ?>
+	
+	<!-- Custom CSS -->
+	<?php echo HTML::style('css/style.css'); ?>
 	
 
-@yield('contenido')
+	<!--[if lt IE 9]>
+	<?php echo HTML::script('http://html5shim.googlecode.com/svn/trunk/html5.js'); ?>
+    <?php echo HTML::script('http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'); ?>
+    <![endif]-->
 
+</head>
+<body data-spy="scroll" data-target="#primary-navigation">
 
-
-	<footer class="row">
-		<div class="container">
-			<div class="row">
-				<div class="span2">
-					<h3>Quick links</h3>
-					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="work.html">Servicios</a></li>
-							<li><a href="about.html">Clientes</a></li>
+	<!--BEGIN: Navigation -->
+	<div class="navbar navbar-fixed-top" id="primary-navigation">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+				</a>
+				<a href="#home" class="brand scroll-page"><img src="img/logo1.png" alt="Zetalabs :: Expertos en Desarrollo Tecnologico"></a>
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+						<li class="active"><?php echo HTML::link('#home', 'HOME', array('class' => 'scroll-page')); ?></li>
+						<li><?php echo HTML::link('#nosotros', 'NOSOTROS', array('class' => 'scroll-page')); ?></li>
+						<li><?php echo HTML::link('#clientes', 'CLIENTES', array('class' => 'scroll-page')); ?></li>
+						<li><?php echo HTML::link('#servicios', 'SERVICIOS', array('class' => 'scroll-page')); ?></li>
+						<li><a href="#work" title="Work" class="scroll-page">WORK</a></li>
+						<li><?php echo HTML::link('#contacto', 'CONTACTO', array('class' => 'scroll-page')); ?></li>
 					</ul>
 				</div>
-				<div class="span2">
-					<br /><br />
-					<ul>
-						<li><a href="plans.html">Proyectos</a></li>
-						<li><a href="faq.html">Preguntas</a></li>
-						<li><a href="contact.html">Contacto</a></li>
-					</ul>
-				</div>
-				<div class="span4 social-networks">
-					<h3>Mantengamos el contacto</h3>
-					<p>Siguenos de la forma que quieras</p>
-					<a href="#" title="Siguenos en Facebook" class="icon-facebook"></a>
-					<a href="#" title="Siguenos en Twitter" class="icon-twitter"></a>
-					<a href="#" title="Siguenos en Google Plus" class="icon-google-plus"></a>
-					<a href="#" title="Siguenos en Google Plus" class="icon-github"></a>
-					<a href="#" title="Siguenos en Google Plus" class="icon-pinterest"></a>
-				</div>
-				<div class="span4">
-					<h3>Newsletter</h3>
-					<p>Subscribe to our monthly newsletter and be the first to know about our news and special deals!</p>
-					<form>
-						<input type="text" placeholder="Enter your E-mail" />
-						<input type="submit" class="btn" value="Ok" />
-					</form>
-				</div>
-			</div> <!-- /row -->		
-		</div> <!-- /container -->
-
-	<div id="footer-extra">
-		<div class="container">
-			<div class="row">
-				<div class="span4">
-					&copy; 2012 ZetaLabs.cl
-				</div>
-				<div class="span4">
-					<i class="icon-phone"></i> &nbsp; 
-					00123 320 000 123 456
-				</div>
-				<div class="span4">
-					<i class="icon-envelope"></i> &nbsp; 
-					<?php echo HTML::mailto('hola@zetalabs.cl', 'contactanos'); ?>
-				</div>
-			</div> <!-- end .row -->		
-		</div> <!-- end .container -->		
+				<!-- /.nav-collapse --> 
+			</div>
+			<!-- /.container --> 
+		</div>
+		<!-- /.navbar-inner --> 
 	</div>
+	<!-- /.navbar --> 
+	<!--END: Navigation --> 
 
-
+	<!--BEGIN: Project Carousel-->
+	<section id="home" class="project-carousel">
+		<div class="container">
+			<div class="row">
+				<div class="span12" style="padding-top:20px;">
+					<div id="featured-project-carousel" class="carousel slide">
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/slide1.png" alt=""> 
+							</div>
+							<!-- /.item -->
+							<div class="item">
+								<img src="img/slide2.png" alt="">
+							</div>
+							<!-- /.item -->
+							<div class="item">
+								<img src="img/slide3.jpg" alt="">
+							</div>
+							<!-- /.item -->
+							<div class="item">
+								<div class="row">
+									<div class="span1">&nbsp;</div>
+									<div class="span5"> 
+										<img src="img/browsers-support.jpg" alt="">
+									</div>
+									<div class="span5">
+										<h2>Browser Support</h2>
+										<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
+										<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
+										<a href="#" class="btn btn-primary">Learn more...</a> </div>
+									<div class="span1">&nbsp;</div>
+								</div>
+								<!-- /.item --> 
+							</div>
+						</div>
+						<a class="left carousel-control" href="#featured-project-carousel" data-slide="prev">&lsaquo;</a> 
+						<a class="right carousel-control" href="#featured-project-carousel" data-slide="next">&rsaquo;</a> </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END: Project Carousel--> 
+	
+	<!--BEGIN: Main Container -->
+	<div class="container">
+		<p>&nbsp;</p>
+		<div class="row">
+			<div class="span12">
+				<div class="action layers">
+					<div class="action-inside clearfix">
+						<h2>Welcome to Awesome Company. Ultimate single page biz theme.</h2>
+						<p>Nulla at ultrices neque. Cras metus erat, pulvinar vel interdum eu, interdum et nibh.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--BEGIN: Features -->
+		<section id="servicios">
+			<article class="page">
+				<div class="row">
+					<div class="span12">
+						<h2 class="page-title">Servicios <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span4">
+						<div class="well layers">
+							<h3>Amazing Features</h3>
+							<p>This theme has tons of amazing features. Tabs, lightbox, carausel and many more</p>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="well layers">
+							<h3>Responsive</h3>
+							<p>This theme will work on any device any resolution. Cool...isn't it.</p>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="well layers">
+							<h3>Top Notch Support</h3>
+							<p>If you're having any problems, I am ready to help. Totally free support.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span4">
+						<div class="alert alert-info layers">
+							<h5><i class="icon icon-briefcase"></i> Ultimate Theme</h5>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+					</div>
+					<div class="span4">
+						<div class="alert alert-danger layers">
+							<h5><i class="icon icon-check"></i> Modern Design</h5>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+					</div>
+					<div class="span4">
+						<div class="alert alert-success layers">
+							<h5><i class="icon icon-align-center"></i> Simple Layout</h5>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+					</div>
+					<div class="span4">
+						<h5><i class="icon icon-eye-open"></i> Make Standout</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+					<div class="span4">
+						<h5><i class="icon icon-facetime-video"></i> Attract Visitors</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+					<div class="span4">
+						<h5><i class="icon icon-edit"></i> Easy to Customize</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+				</div>
+			</article>
+		</section>
+		<!--END: Features --> 
+		
+		<!--BEGIN: About -->
+		<section id="nosotros">
+			<article class="page">
+				<div class="row">
+					<div class="span12">
+						<h2 class="page-title">NOSOTROS <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+					</div>
+					<div class="span8">
+						<div class="action layers">
+							<div class="action-inside clearfix">
+								<h2>Welcome to Awesome Company.</h2>
+								<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
+							</div>
+						</div>
+					</div>
+					<div class="span4">
+						<div class="well layers">
+							<h5>Our client says...</h5>
+							<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small> </div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="span4">
+						<h5><i class="icon icon-chevron-right"></i> OUR APPROACH</h5>
+						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+					</div>
+					<div class="span4">
+						<h5><i class="icon icon-chevron-right"></i> METHODOLOGY</h5>
+						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+					</div>
+					<div class="span4">
+						<h5><i class="icon icon-chevron-right"></i> CULTURE</h5>
+						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="span8">
+						<h3>Team <small class="label label-info">Click on image to lauch detail in modal window.</small></h3>
+						<ul class="thumbnails">
+							<li class="span2">
+								<div class="well well-small layers"> <a href="#bio1" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
+									<h6>Some Name</h6>
+									<label class="label label-info">CEO</label>
+								</div>
+								
+								<!--Modal-->
+								<div class="modal hide fade" id="bio1" tabindex="-1" role="dialog">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h3>Some Name - CEO</h3>
+									</div>
+									<div class="modal-body">
+										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+									</div>
+								</div>
+								<!--Modal--> 
+								
+							</li>
+							<li class="span2">
+								<div class="well well-small layers"> <a href="#bio2" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
+									<h6>Some Name</h6>
+									<label class="label label-info">CTO</label>
+								</div>
+								
+								<!--Modal-->
+								<div class="modal hide fade" id="bio2" tabindex="-1" role="dialog">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h3>Some Name - CTO</h3>
+									</div>
+									<div class="modal-body">
+										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+									</div>
+								</div>
+								<!--Modal--> 
+								
+							</li>
+							<li class="span2">
+								<div class="well well-small layers"> <a href="#bio3" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
+									<h6>Some Name</h6>
+									<label class="label label-info">Director</label>
+								</div>
+								
+								<!--Modal-->
+								<div class="modal hide fade" id="bio3" tabindex="-1" role="dialog">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h3>Some Name - Director</h3>
+									</div>
+									<div class="modal-body">
+										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+									</div>
+								</div>
+								<!--Modal--> 
+								
+							</li>
+							<li class="span2">
+								<div class="well well-small layers"> <a href="#bio4" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
+									<h6>Some Name</h6>
+									<label class="label label-info">Developer</label>
+								</div>
+								
+								<!--Modal-->
+								<div class="modal hide fade" id="bio4" tabindex="-1" role="dialog">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h3>Some Name - Developer</h3>
+									</div>
+									<div class="modal-body">
+										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+									</div>
+								</div>
+								<!--Modal--> 
+								
+							</li>
+						</ul>
+					</div>
+					<div class="span4">
+						<h3>Careers</h3>
+						<table class="table table-hover table-bordered table-striped layers">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Job Opening <span class="label label-info">Place</span></th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Creative Director <span class="label label-info">New York</span></td>
+									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>2</td>
+									<td>Sr. Designer <span class="label label-info">Ohio</span></td>
+									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>3</td>
+									<td>Sr. Developer <span class="label label-info">Phoenix</span></td>
+									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>4</td>
+									<td>iPhone Developer <span class="label label-info">New York</span></td>
+									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!--END: About --> 
+		
+		<!--BEGIN: Services -->
+		<section id="services">
+			<article class="page">
+				<div class="row">
+					<div class="span12">
+						<h2 class="page-title">Services <a class="to-top scroll-page" href="#home" title="To Top" rel="tooltip"><i class="icon-chevron-up"></i></a></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span4">
+						<div class="well">
+							<h2>Software Solutions & IT Services</h2>
+							<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
+						</div>
+					</div>
+					<div class="span4">
+						<h5><i class="icon icon-briefcase"></i> Web Design & development</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small>
+						<hr />
+					</div>
+					<div class="span4">
+						<h5><i class="icon icon-move"></i> Mobile Apps</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small>
+						<hr />
+					</div>
+					<div class="span4">
+						<h5><i class="icon icon-eye-open"></i> Search Engine Optimization</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+					<div class="span4">
+						<h5><i class="icon icon-bookmark"></i> IT Consulting</h5>
+						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
+				</div>
+				
+				<hr />
+				
+				<div class="row">
+					<div class="span3">
+						<h4>Java Platform</h4>
+						<small>
+						<ul>
+							<li>Enterprise Architecture</li>
+							<li>SAAS</li>
+							<li>SOA</li>
+							<li>Structs/JSF/JSP/EJP/J2EE</li>
+							<li>Eclipse PDE</li>
+							<li>Apache Foundation</li>
+							<li>Meta Data</li>
+							<li>Lucen</li>
+						</ul>
+						</small> </div>
+					<div class="span3">
+						<h4>Microsoft Platform</h4>
+						<small>
+						<ul>
+							<li>.NET (Desktop/Mobile /Web APPS)</li>
+							<li>Office Automation</li>
+							<li>Custom Authentication</li>
+							<li>Exchange Server</li>
+						</ul>
+						</small> </div>
+					<div class="span3">
+						<h4>Web Solutions</h4>
+						<small>
+						<ul>
+							<li>Custom Application</li>
+							<li>E-Commerce</li>
+							<li>Os-Commerce</li>
+							<li>Drupal</li>
+							<li>Joomla</li>
+							<li>E-learning</li>
+							<li>LAMP</li>
+							<li>Portals</li>
+						</ul>
+						</small> </div>
+					<div class="span3">
+						<h4>Testing Solutions</h4>
+						<small>
+						<ul>
+							<li>Manual/Automated Load Testing</li>
+							<li>Performance</li>
+							<li>Multi User Testing</li>
+							<li>Distributed Deployment</li>
+						</ul>
+						</small> </div>
+				</div>
+				
+				<hr />
+				
+				<blockquote>
+					<div class="well">
+						<p><em>I recommend this company as a highly reliable and professional web development company. They developed a big B2B marketplace for us. The project was done on time an on budget that was extremely important for our organization.</em></p>
+						<p><small><strong>Tom</strong>, CTO | USA </small> </p>
+					</div>
+				</blockquote>
+				<hr />
+				
+			</article>
+		</section>
+		<!--END: Services --> 
+		
+		<!--BEGIN: Work -->
+		<section id="work">
+			<article class="page">
+				<div class="row">
+					<div class="span12">
+						<h2 class="page-title">Work <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+					</div>
+					<div class="span12">
+						<p><strong>Select type of work:</strong></p>
+						<ul class="nav nav-pills" id="work-tabs">
+							<li class="active"><a href="#work-featured" data-toggle="pill">Featured</a></li>
+							<li><a href="#work-web" data-toggle="pill">Web</a></li>
+							<li><a href="#work-print" id="print" data-toggle="pill">Print</a></li>
+							<li><a href="#work-mobile" data-toggle="pill">Mobile</a></li>
+							<li><a href="#work-illustration" data-toggle="pill">Illustrations</a></li>
+						</ul>
+						<div class="tab-content"> 
+							<!--BEGIN: Work Featured-->
+							<div class="tab-pane fade in active" id="work-featured">
+								<div class="row">
+									<div class="span6">
+										<div class="action layers">
+											<div class="action-inside clearfix">
+												<h5>Project Name</h5>
+												<a href="#" class="thumbnail"> <img src="http://placehold.it/520x380" alt=""> </a> </div>
+										</div>
+									</div>
+									<div class="span6">
+										<div class="well">
+											<h4>There are 4 types of layout for the portfolio/work. Please select type of work and notice how you can place your deisgn work in different manner.</h4>
+											<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+										</div>
+										<ul class="thumbnails clearfix">
+											<li class="span3">
+												<div class="action layers">
+													<div class="action-inside clearfix">
+														<h5>Project Name</h5>
+														<a href="#" class="thumbnail"> <img src="http://placehold.it/320x270" alt=""> </a> </div>
+												</div>
+											</li>
+											<li class="span3">
+												<div class="action layers">
+													<div class="action-inside clearfix">
+														<h5>Project Name</h5>
+														<a href="#" class="thumbnail"> <img src="http://placehold.it/320x270" alt=""> </a> </div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--END: Work Featured--> 
+							<!--BEGIN: Work Web-->
+							<div class="tab-pane fade" id="work-web">
+								<ul class="thumbnails">
+									<li class="span4"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x270" alt=""> </a> </li>
+									<li class="span3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x120" alt=""> </a> </li>
+									<li class="span5"> <a href="#" class="thumbnail"> <img src="http://placehold.it/460x120" alt=""> </a> </li>
+									<li class="span3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x120" alt=""> </a> </li>
+									<li class="span3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x120" alt=""> </a> </li>
+									<li class="span2"> <a href="#" class="thumbnail"> <img src="http://placehold.it/160x120" alt=""> </a> </li>
+								</ul>
+							</div>
+							<!--END: Work Web--> 
+							<!--BEGIN: Work Print-->
+							<div class="tab-pane fade" id="work-print">
+								<ul class="thumbnails">
+									<li class="span6"> <a href="#" class="thumbnail"> <img src="http://placehold.it/560x270" alt=""> </a> </li>
+									<li class="span3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x120" alt=""> </a> </li>
+									<li class="span3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/260x120" alt=""> </a> </li>
+									<li class="span2"> <a href="#" class="thumbnail"> <img src="http://placehold.it/160x120" alt=""> </a> </li>
+									<li class="span2"> <a href="#" class="thumbnail"> <img src="http://placehold.it/160x120" alt=""> </a> </li>
+									<li class="span2"> <a href="#" class="thumbnail"> <img src="http://placehold.it/160x120" alt=""> </a> </li>
+								</ul>
+							</div>
+							<!--END: Work Prin--> 
+							<!--BEGIN: Work Mobile-->
+							<div class="tab-pane fade" id="work-mobile">
+								<ul class="thumbnails">
+									<li class="span4">
+										<div class="well layers"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x270" alt=""> </a> </div>
+									</li>
+									<li class="span4">
+										<div class="well layers"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x270" alt=""> </a> </div>
+									</li>
+									<li class="span4">
+										<div class="well layers"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x270" alt=""> </a> </div>
+									</li>
+								</ul>
+							</div>
+							<!--END: Work Mobile--> 
+							<!--BEGIN: Work Mobile-->
+							<div class="tab-pane fade" id="work-illustration">
+								<ul class="thumbnails">
+									<li class="span12"> <a href="#" class="thumbnail"> <img src="http://placehold.it/1170x100" alt=""> </a> </li>
+									<li class="span4"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x270" alt=""> </a> </li>
+									<li class="span4"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x270" alt=""> </a> </li>
+									<li class="span4"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x120" alt=""> </a> </li>
+									<li class="span4"> <a href="#" class="thumbnail"> <img src="http://placehold.it/360x120" alt=""> </a> </li>
+								</ul>
+							</div>
+							<!--END: Work Mobile--> 
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!--END: Work --> 
+		
+	</div>
+	<!-- /.container --> 
+	<!--END: Main Container --> 
+	
+	<!--BEGIN: Contact -->
+	<section id="contacto">
+		<article class="page">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<h2 class="page-title">CONTACTO <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+					</div>
+					<div class="span5">
+						<div class="well well-small"> <a href="#" rel="tooltip" title="Link to google map"><img src="img/map.png" alt="" /></a> </div>
+					</div>
+					<div class="span3">
+						<h4>Contact Information</h4>
+						<p> <i class="icon-user"></i> +1 888 8888 888<br>
+							<i class="icon-envelope"></i> info@yourbiz.com<br>
+							<i class="icon-map-marker"></i> 111th, North Ave, Suite 530, AZ </p>
+						<hr>
+						<h4>Text</h4>
+						<small> Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </small> </div>
+					<div class="span3">
+						<h4>Contact Us</h4>
+						<form class="form" id="contact-form">
+							<!--[if IE]><label for="name">Name</label><![endif]-->
+							<input type="text" id="name" name="name" class="span3" style="margin-right:25px;" placeholder="Name">
+							<!--[if IE]><label for="email">E-mail</label><![endif]-->
+							<input id="email" type="text" class="span3" name="email" placeholder="Email">
+							<!--[if IE]><label for="message">Message</label><![endif]-->
+							<textarea id="message" name="message" placeholder="Message" class="span3" rows="7"></textarea>
+							<button type="submit" class="btn btn-primary btn-small">Send message</button>
+						</form>
+					</div>
+					<div class="span1 text-center social">
+						<h4>Social</h4>
+						<a href="#" rel="tooltip" title="Facebook"><img src="img/facebook.png" alt="" /></a> <a href="#" rel="tooltip" title="Twitter"><img src="img/twitter.png" alt="" /></a> <a href="#" rel="tooltip" title="Google Plus"><img src="img/googleplus.png" alt="" /></a> <a href="#" rel="tooltip" title="LinkedIn"><img src="img/linkedin.png" alt="" /></a> <a href="#" rel="tooltip" title="Pin Interest"><img src="img/pininterest.png" alt="" /></a> </div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<!--END: Contact --> 
+	
+	<!--BEGIN: Project Carousel-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="span4 copyright"> <small>&copy; Copyright 2012. All rights reserved</small> </div>
+				<div class="span8 footer-links"> <a href="#home" title="Home" class="scroll-page">HOME</a> | <a href="#services" title="Services" class="scroll-page">SERVICES</a> | <a href="#features" title="Features" class="scroll-page">FEATURES</a> | <a href="#work" title="Work" class="scroll-page">WORK</a> | <a href="#about" title="About" class="scroll-page">ABOUT</a> | <a href="#contact" title="Contact" class="scroll-page">CONTACT</a> </div>
+			</div>
+		</div>
 	</footer>
+	<!--END: Footer--> 
 
-
-
-
-	<?php echo HTML::script('js/bootstrap.min.js'); ?>
-	<?php echo HTML::script('js/jquery.isotope.min.js'); ?>
-	<?php echo HTML::script('js/jquery.touchSwipe.js'); ?>
-	<?php echo HTML::script('js/functions.min.js'); ?>
-
-	</body>
+<!-- Scripts --> 
+<?php echo HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'); ?>
+<?php echo HTML::script('js/bootstrap.min.js'); ?>
+<?php echo HTML::script('js/custom.js'); ?>
+</body>
 </html>
