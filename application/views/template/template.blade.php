@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- Title -->
-	<title>Debo cambiar el titulo</title>
+	<title>@yield('titulo')</title>
 	
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -13,9 +13,8 @@
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<!-- For iPhone 4 Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114x114-precomposed.png">
 	<!-- For iPad: -->
@@ -43,75 +42,11 @@
 <body data-spy="scroll" data-target="#primary-navigation">
 
 	<!--BEGIN: Navigation -->
-	<div class="navbar navbar-fixed-top" id="primary-navigation">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span> 
-					<span class="icon-bar"></span> 
-					<span class="icon-bar"></span> 
-				</a>
-				<a href="#home" class="brand scroll-page"><img src="img/logo1.png" alt="Zetalabs :: Expertos en Desarrollo Tecnologico"></a>
-				<div class="nav-collapse collapse">
-					<ul class="nav pull-right">
-						<li class="active"><?php echo HTML::link('#home', 'HOME', array('class' => 'scroll-page')); ?></li>
-						<li><?php echo HTML::link('#nosotros', 'NOSOTROS', array('class' => 'scroll-page')); ?></li>
-						<li><?php echo HTML::link('#clientes', 'CLIENTES', array('class' => 'scroll-page')); ?></li>
-						<li><?php echo HTML::link('#servicios', 'SERVICIOS', array('class' => 'scroll-page')); ?></li>
-						<li><a href="#work" title="Work" class="scroll-page">WORK</a></li>
-						<li><?php echo HTML::link('#contacto', 'CONTACTO', array('class' => 'scroll-page')); ?></li>
-					</ul>
-				</div>
-				<!-- /.nav-collapse --> 
-			</div>
-			<!-- /.container --> 
-		</div>
-		<!-- /.navbar-inner --> 
-	</div>
-	<!-- /.navbar --> 
+	@yield('menu')
 	<!--END: Navigation --> 
 
 	<!--BEGIN: Project Carousel-->
-	<section id="home" class="project-carousel">
-		<div class="container">
-			<div class="row">
-				<div class="span12" style="padding-top:20px;">
-					<div id="featured-project-carousel" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="img/slide1.png" alt=""> 
-							</div>
-							<!-- /.item -->
-							<div class="item">
-								<img src="img/slide2.png" alt="">
-							</div>
-							<!-- /.item -->
-							<div class="item">
-								<img src="img/slide3.jpg" alt="">
-							</div>
-							<!-- /.item -->
-							<div class="item">
-								<div class="row">
-									<div class="span1">&nbsp;</div>
-									<div class="span5"> 
-										<img src="img/browsers-support.jpg" alt="">
-									</div>
-									<div class="span5">
-										<h2>Browser Support</h2>
-										<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
-										<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
-										<a href="#" class="btn btn-primary">Learn more...</a> </div>
-									<div class="span1">&nbsp;</div>
-								</div>
-								<!-- /.item --> 
-							</div>
-						</div>
-						<a class="left carousel-control" href="#featured-project-carousel" data-slide="prev">&lsaquo;</a> 
-						<a class="right carousel-control" href="#featured-project-carousel" data-slide="next">&rsaquo;</a> </div>
-				</div>
-			</div>
-		</div>
-	</section>
+	@yield('carrusel')
 	<!--END: Project Carousel--> 
 	
 	<!--BEGIN: Main Container -->
@@ -121,7 +56,7 @@
 			<div class="span12">
 				<div class="action layers">
 					<div class="action-inside clearfix">
-						<h2>Welcome to Awesome Company. Ultimate single page biz theme.</h2>
+						<h2>Zetalabs, desarrollo tecnologico a la medida de tus necesidades</h2>
 						<p>Nulla at ultrices neque. Cras metus erat, pulvinar vel interdum eu, interdum et nibh.</p>
 					</div>
 				</div>
@@ -133,7 +68,7 @@
 			<article class="page">
 				<div class="row">
 					<div class="span12">
-						<h2 class="page-title">Servicios <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+						<h2 class="page-title">Servicios <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
 					</div>
 				</div>
 				<div class="row">
@@ -191,7 +126,7 @@
 			<article class="page">
 				<div class="row">
 					<div class="span12">
-						<h2 class="page-title">NOSOTROS <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+						<h2 class="page-title">NOSOTROS <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
 					</div>
 					<div class="span8">
 						<div class="action layers">
@@ -288,7 +223,7 @@
 										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
 									</div>
 									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
 									</div>
 								</div>
 								<!--Modal--> 
@@ -368,7 +303,7 @@
 			<article class="page">
 				<div class="row">
 					<div class="span12">
-						<h2 class="page-title">Services <a class="to-top scroll-page" href="#home" title="To Top" rel="tooltip"><i class="icon-chevron-up"></i></a></h2>
+						<h2 class="page-title">Services <a class="to-top scroll-page" href="#home" title="Ir Arriba" rel="tooltip"><i class="icon-chevron-up"></i></a></h2>
 					</div>
 				</div>
 				<div class="row">
@@ -464,11 +399,11 @@
 		<!--END: Services --> 
 		
 		<!--BEGIN: Work -->
-		<section id="work">
+		<section id="portafolio">
 			<article class="page">
 				<div class="row">
 					<div class="span12">
-						<h2 class="page-title">Work <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+						<h2 class="page-title">PORTAFOLIO <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
 					</div>
 					<div class="span12">
 						<p><strong>Select type of work:</strong></p>
@@ -582,49 +517,42 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<h2 class="page-title">CONTACTO <a class="to-top scroll-page" href="#home" title="To Top"><i class="icon-chevron-up"></i></a></h2>
+						<h2 class="page-title">CONTACTO <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
 					</div>
 					<div class="span5">
-						<div class="well well-small"> <a href="#" rel="tooltip" title="Link to google map"><img src="img/map.png" alt="" /></a> </div>
+						<div class="well well-small"> <iframe width="100%" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=New+York&amp;sll=-33.668298,-70.363372&amp;sspn=1.451545,2.90863&amp;ie=UTF8&amp;hq=&amp;hnear=Ram%C3%B3n+Freire+466,+Copiap%C3%B3,+Atacama&amp;ll=-27.359449,-70.350801&amp;spn=0.019517,0.018797&amp;z=16&amp;iwloc=near&amp;output=embed"></iframe> </div>
 					</div>
 					<div class="span3">
-						<h4>Contact Information</h4>
-						<p> <i class="icon-user"></i> +1 888 8888 888<br>
-							<i class="icon-envelope"></i> info@yourbiz.com<br>
-							<i class="icon-map-marker"></i> 111th, North Ave, Suite 530, AZ </p>
+						<h4>Informacion de Contacto</h4>
+						<p> <!--<i class="icon-user"></i> +1 888 8888 888<br> -->
+							<i class="icon-envelope"></i> hola@zetalabs.cl<br>
+							<!--<i class="icon-map-marker"></i> 111th, North Ave, Suite 530, AZ </p>-->
 						<hr>
 						<h4>Text</h4>
 						<small> Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </small> </div>
 					<div class="span3">
-						<h4>Contact Us</h4>
+						<h4>Contactanos</h4>
 						<form class="form" id="contact-form">
 							<!--[if IE]><label for="name">Name</label><![endif]-->
-							<input type="text" id="name" name="name" class="span3" style="margin-right:25px;" placeholder="Name">
+							<input type="text" id="name" name="name" class="span3" style="margin-right:25px;" placeholder="Nombre">
 							<!--[if IE]><label for="email">E-mail</label><![endif]-->
 							<input id="email" type="text" class="span3" name="email" placeholder="Email">
 							<!--[if IE]><label for="message">Message</label><![endif]-->
-							<textarea id="message" name="message" placeholder="Message" class="span3" rows="7"></textarea>
-							<button type="submit" class="btn btn-primary btn-small">Send message</button>
+							<textarea id="message" name="message" placeholder="Mensaje" class="span3" rows="7"></textarea>
+							<button type="submit" class="btn btn-primary btn-small">Enviar Mensaje</button>
 						</form>
 					</div>
 					<div class="span1 text-center social">
 						<h4>Social</h4>
-						<a href="#" rel="tooltip" title="Facebook"><img src="img/facebook.png" alt="" /></a> <a href="#" rel="tooltip" title="Twitter"><img src="img/twitter.png" alt="" /></a> <a href="#" rel="tooltip" title="Google Plus"><img src="img/googleplus.png" alt="" /></a> <a href="#" rel="tooltip" title="LinkedIn"><img src="img/linkedin.png" alt="" /></a> <a href="#" rel="tooltip" title="Pin Interest"><img src="img/pininterest.png" alt="" /></a> </div>
+						<a href="http://facebook.com/zetalabs" rel="tooltip" title="Facebook"><img src="img/facebook.png" alt="" /></a> <a href="http://twitter.com/zetalabscl" rel="tooltip" title="Twitter"><img src="img/twitter.png" alt="" /></a> <a href="#" rel="tooltip" title="Google Plus"><img src="img/googleplus.png" alt="" /></a> <a href="#" rel="tooltip" title="LinkedIn"><img src="img/linkedin.png" alt="" /></a> <a href="#" rel="tooltip" title="Pin Interest"><img src="img/pininterest.png" alt="" /></a> </div>
 				</div>
 			</div>
 		</article>
 	</section>
 	<!--END: Contact --> 
 	
-	<!--BEGIN: Project Carousel-->
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="span4 copyright"> <small>&copy; Copyright 2012. All rights reserved</small> </div>
-				<div class="span8 footer-links"> <a href="#home" title="Home" class="scroll-page">HOME</a> | <a href="#services" title="Services" class="scroll-page">SERVICES</a> | <a href="#features" title="Features" class="scroll-page">FEATURES</a> | <a href="#work" title="Work" class="scroll-page">WORK</a> | <a href="#about" title="About" class="scroll-page">ABOUT</a> | <a href="#contact" title="Contact" class="scroll-page">CONTACT</a> </div>
-			</div>
-		</div>
-	</footer>
+	<!--BEGIN: Footer -->
+	@yield('footer')
 	<!--END: Footer--> 
 
 <!-- Scripts --> 

@@ -156,26 +156,37 @@
 	"buffers":
 	[
 		{
-			"file": "application/config/application.php",
-			"settings":
-			{
-				"buffer_size": 6671,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "application/controllers/test.php",
 			"settings":
 			{
-				"buffer_size": 204,
+				"buffer_size": 365,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/routes.php",
+			"file": "/Users/reyz/Library/Caches/Cleanup At Startup/Transmit/0BDE7E85-93B4-400B-B9E0-3A1AD62A89F0/index.html",
 			"settings":
 			{
-				"buffer_size": 2797,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/Users/reyz/Downloads/demo/assets/style.css",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 164,
 				"line_ending": "Unix"
 			}
 		}
@@ -187,16 +198,20 @@
 		"selected_items":
 		[
 			[
+				"file",
+				"FileDiffs: Menu"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
 				"fet",
 				"Fetch: Package"
 			],
 			[
 				"laravel cotro",
 				"Snippet: Laravel: IoC::controller()"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"FET",
@@ -247,7 +262,7 @@
 				"Gist: Create Private Gist"
 			]
 		],
-		"width": 804.0
+		"width": 579.0
 	},
 	"console":
 	{
@@ -264,6 +279,13 @@
 	},
 	"file_history":
 	[
+		"/Users/reyz/Library/Caches/Cleanup At Startup/Transmit/DA184410-84BB-43EF-A9E4-5961D3925DB7/index.php",
+		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/Soda Light.sublime-theme",
+		"/Users/reyz/Documents/Sublime Backup/Packages/Theme - Soda/Soda Light.sublime-theme",
+		"/Users/reyz/Google Drive/MAMP/htdocs/zetalabs-web/application/routes.php",
+		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/Soda Light__.sublime-theme",
+		"/Users/reyz/Google Drive/MAMP/htdocs/zetalabs-web/application/config/application.php",
 		"/Users/reyz/Google Drive/MAMP/htdocs/zetalabs-web/application/views/error/404.php",
 		"/Users/reyz/Google Drive/MAMP/htdocs/zetalabs-web/index.php",
 		"/Users/reyz/Google Drive/MAMP/htdocs/zetalabs/application/controllers/base.php",
@@ -346,7 +368,6 @@
 		"/Users/reyz/Google Drive/MAMP/htdocs/gaschile/application/config/database.php",
 		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/reyz/Google Drive/MAMP/htdocs/gaschile/application/errors/error_general.php",
-		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/reyz/Google Drive/MAMP/htdocs/gaschile/application/config/migration.php",
 		"/Users/reyz/Google Drive/MAMP/htdocs/gaschile/application/errors/error_404.php",
 		"/Users/reyz/Google Drive/MAMP/htdocs/gaschile/application/errors/error_php.php",
@@ -385,8 +406,7 @@
 		"/Users/reyz/Desktop/test2.php",
 		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/PHP.sublime-settings",
-		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/Users/reyz/Desktop/test.html"
+		"/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings"
 	],
 	"find":
 	{
@@ -404,6 +424,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"SIDEBAR",
 			"mac",
 			"button",
 			"calendar",
@@ -438,18 +459,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "application/config/application.php",
+					"file": "application/controllers/test.php",
 					"settings":
 					{
-						"buffer_size": 6671,
+						"buffer_size": 365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								420,
-								420
+								301,
+								301
 							]
 						],
 						"settings":
@@ -460,6 +481,7 @@
 								"README",
 								"FIXME"
 							],
+							"color_scheme": "Packages/User/Larapaste-sublime-theme/Larapaste.tmTheme",
 							"csslint_options":
 							{
 								"adjoining-classes": "warning",
@@ -539,13 +561,13 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
+								"C++": "c",
 								"Python Django": "python",
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -555,24 +577,28 @@
 				},
 				{
 					"buffer": 1,
-					"file": "application/controllers/test.php",
+					"file": "/Users/reyz/Library/Caches/Cleanup At Startup/Transmit/0BDE7E85-93B4-400B-B9E0-3A1AD62A89F0/index.html",
 					"settings":
 					{
-						"buffer_size": 204,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								52,
-								52
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -582,113 +608,55 @@
 				},
 				{
 					"buffer": 2,
-					"file": "application/routes.php",
+					"file": "/Users/reyz/Downloads/demo/assets/style.css",
 					"settings":
 					{
-						"buffer_size": 2797,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								943,
-								943
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
 							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
 							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 53127.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/reyz/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
