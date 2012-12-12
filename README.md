@@ -14,5 +14,5 @@ Laravel is open-sourced software licensed under the MIT License.
 
 ## Desarrollado por
 
-[Reinaldo Zurita](mailto:reinaldo@zetalas.cl)
-[Zetalabs](mailto:hola@zetalabs.cl)
+# [Reinaldo Zurita](mailto:reinaldo@zetalas.cl)
+# [Zetalabs](mailto:hola@zetalabs.cl)
