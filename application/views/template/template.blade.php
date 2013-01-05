@@ -57,13 +57,13 @@
 				<div class="action layers">
 					<div class="action-inside clearfix">
 						<h2>Zetalabs, desarrollo tecnologico a la medida de tus necesidades</h2>
-						<p>Nulla at ultrices neque. Cras metus erat, pulvinar vel interdum eu, interdum et nibh.</p>
+						<p>Estamos preparados para dar solucion a tus inquietudes en seguridad, desarrollo, implementacion y mantencion de tus plataformas tecnologicas.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<!--BEGIN: Features -->
+		<!--BEGIN: Features 
 		<section id="servicios">
 			<article class="page">
 				<div class="row">
@@ -118,185 +118,14 @@
 						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
 				</div>
 			</article>
-		</section>
+		</section>-->
 		<!--END: Features --> 
 		
-		<!--BEGIN: About -->
-		<section id="nosotros">
-			<article class="page">
-				<div class="row">
-					<div class="span12">
-						<h2 class="page-title">NOSOTROS <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
-					</div>
-					<div class="span8">
-						<div class="action layers">
-							<div class="action-inside clearfix">
-								<h2>Welcome to Awesome Company.</h2>
-								<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner.</p>
-							</div>
-						</div>
-					</div>
-					<div class="span4">
-						<div class="well layers">
-							<h5>Our client says...</h5>
-							<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
-							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small> </div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="span4">
-						<h5><i class="icon icon-chevron-right"></i> OUR APPROACH</h5>
-						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
-					</div>
-					<div class="span4">
-						<h5><i class="icon icon-chevron-right"></i> METHODOLOGY</h5>
-						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
-					</div>
-					<div class="span4">
-						<h5><i class="icon icon-chevron-right"></i> CULTURE</h5>
-						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="span8">
-						<h3>Team <small class="label label-info">Click on image to lauch detail in modal window.</small></h3>
-						<ul class="thumbnails">
-							<li class="span2">
-								<div class="well well-small layers"> <a href="#bio1" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
-									<h6>Some Name</h6>
-									<label class="label label-info">CEO</label>
-								</div>
-								
-								<!--Modal-->
-								<div class="modal hide fade" id="bio1" tabindex="-1" role="dialog">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-										<h3>Some Name - CEO</h3>
-									</div>
-									<div class="modal-body">
-										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
-									</div>
-									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-									</div>
-								</div>
-								<!--Modal--> 
-								
-							</li>
-							<li class="span2">
-								<div class="well well-small layers"> <a href="#bio2" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
-									<h6>Some Name</h6>
-									<label class="label label-info">CTO</label>
-								</div>
-								
-								<!--Modal-->
-								<div class="modal hide fade" id="bio2" tabindex="-1" role="dialog">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-										<h3>Some Name - CTO</h3>
-									</div>
-									<div class="modal-body">
-										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
-									</div>
-									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-									</div>
-								</div>
-								<!--Modal--> 
-								
-							</li>
-							<li class="span2">
-								<div class="well well-small layers"> <a href="#bio3" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
-									<h6>Some Name</h6>
-									<label class="label label-info">Director</label>
-								</div>
-								
-								<!--Modal-->
-								<div class="modal hide fade" id="bio3" tabindex="-1" role="dialog">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-										<h3>Some Name - Director</h3>
-									</div>
-									<div class="modal-body">
-										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
-									</div>
-									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
-									</div>
-								</div>
-								<!--Modal--> 
-								
-							</li>
-							<li class="span2">
-								<div class="well well-small layers"> <a href="#bio4" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
-									<h6>Some Name</h6>
-									<label class="label label-info">Developer</label>
-								</div>
-								
-								<!--Modal-->
-								<div class="modal hide fade" id="bio4" tabindex="-1" role="dialog">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-										<h3>Some Name - Developer</h3>
-									</div>
-									<div class="modal-body">
-										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
-									</div>
-									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-									</div>
-								</div>
-								<!--Modal--> 
-								
-							</li>
-						</ul>
-					</div>
-					<div class="span4">
-						<h3>Careers</h3>
-						<table class="table table-hover table-bordered table-striped layers">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>Job Opening <span class="label label-info">Place</span></th>
-									<th>Action</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>Creative Director <span class="label label-info">New York</span></td>
-									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td>2</td>
-									<td>Sr. Designer <span class="label label-info">Ohio</span></td>
-									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td>3</td>
-									<td>Sr. Developer <span class="label label-info">Phoenix</span></td>
-									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td>4</td>
-									<td>iPhone Developer <span class="label label-info">New York</span></td>
-									<td><a href="#" class="btn btn-mini btn-primary">Apply</a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</article>
-		</section>
-		<!--END: About --> 
+		<!--BEGIN: Nosotros -->
+		
+			@yield('nosotros')
+
+		<!--END: Nosotros --> 
 		
 		<!--BEGIN: Services -->
 		<section id="services">
@@ -512,43 +341,7 @@
 	<!--END: Main Container --> 
 	
 	<!--BEGIN: Contact -->
-	<section id="contacto">
-		<article class="page">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<h2 class="page-title">CONTACTO <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
-					</div>
-					<div class="span5">
-						<div class="well well-small"> <iframe width="100%" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=New+York&amp;sll=-33.668298,-70.363372&amp;sspn=1.451545,2.90863&amp;ie=UTF8&amp;hq=&amp;hnear=Ram%C3%B3n+Freire+466,+Copiap%C3%B3,+Atacama&amp;ll=-27.359449,-70.350801&amp;spn=0.019517,0.018797&amp;z=16&amp;iwloc=near&amp;output=embed"></iframe> </div>
-					</div>
-					<div class="span3">
-						<h4>Informacion de Contacto</h4>
-						<p> <!--<i class="icon-user"></i> +1 888 8888 888<br> -->
-							<i class="icon-envelope"></i> hola@zetalabs.cl<br>
-							<!--<i class="icon-map-marker"></i> 111th, North Ave, Suite 530, AZ </p>-->
-						<hr>
-						<h4>Text</h4>
-						<small> Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </small> </div>
-					<div class="span3">
-						<h4>Contactanos</h4>
-						<form class="form" id="contact-form">
-							<!--[if IE]><label for="name">Name</label><![endif]-->
-							<input type="text" id="name" name="name" class="span3" style="margin-right:25px;" placeholder="Nombre">
-							<!--[if IE]><label for="email">E-mail</label><![endif]-->
-							<input id="email" type="text" class="span3" name="email" placeholder="Email">
-							<!--[if IE]><label for="message">Message</label><![endif]-->
-							<textarea id="message" name="message" placeholder="Mensaje" class="span3" rows="7"></textarea>
-							<button type="submit" class="btn btn-primary btn-small">Enviar Mensaje</button>
-						</form>
-					</div>
-					<div class="span1 text-center social">
-						<h4>Social</h4>
-						<a href="http://facebook.com/zetalabs" rel="tooltip" title="Facebook"><img src="img/facebook.png" alt="" /></a> <a href="http://twitter.com/zetalabscl" rel="tooltip" title="Twitter"><img src="img/twitter.png" alt="" /></a> <a href="#" rel="tooltip" title="Google Plus"><img src="img/googleplus.png" alt="" /></a> <a href="#" rel="tooltip" title="LinkedIn"><img src="img/linkedin.png" alt="" /></a> <a href="#" rel="tooltip" title="Pin Interest"><img src="img/pininterest.png" alt="" /></a> </div>
-				</div>
-			</div>
-		</article>
-	</section>
+	@yield('contacto')
 	<!--END: Contact --> 
 	
 	<!--BEGIN: Footer -->
