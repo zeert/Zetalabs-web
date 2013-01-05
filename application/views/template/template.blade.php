@@ -41,6 +41,49 @@
 </head>
 <body data-spy="scroll" data-target="#primary-navigation">
 
+
+<style type="text/css">
+		<style type="text/css" media="screen">
+			body { padding-bottom: 5em; }
+			ul { margin: 0; padding: 0; list-style: none; }
+			
+			.carousel-tabs { clear: both; }
+			.carousel-active-tab { color: red; }	
+			.carousel-disabled,
+			.mr-rotato-disabled { color: #aaa; }
+
+			.slidewrap2 .carousel-tabs {
+				padding: 0;
+				margin: 1em 0;
+				clear: both;
+			}
+			.slidewrap2 .carousel-tabs li {
+			    display: inline-block; 
+			    padding: 0 2px;
+			}
+			.slidewrap2 .carousel-tabs a {
+			    background: #ddd;
+			    display: inline-block;
+			    height: 10px;
+			    text-indent: -9999px;
+			    width: 10px;
+			    border-radius: 5px;
+			}
+			.ie .slidewrap2 .carousel-tabs li,
+			.ie .slidewrap2 .carousel-tabs a { 
+				display: block;
+				float: left;
+			}
+			.slidewrap2 .carousel-tabs .carousel-active-tab a {
+				background: #777;
+			}
+			
+			.events {
+				font: normal 11px/1.4 arial, helvetica, sans-serif;
+			}
+			
+		</style>
+</style>
 	<!--BEGIN: Navigation -->
 	@yield('menu')
 	<!--END: Navigation --> 
@@ -50,77 +93,8 @@
 	<!--END: Project Carousel--> 
 	
 	<!--BEGIN: Main Container -->
-	<div class="container">
-		<p>&nbsp;</p>
-		<div class="row">
-			<div class="span12">
-				<div class="action layers">
-					<div class="action-inside clearfix">
-						<h2>Zetalabs, desarrollo tecnologico a la medida de tus necesidades</h2>
-						<p>Estamos preparados para dar solucion a tus inquietudes en seguridad, desarrollo, implementacion y mantencion de tus plataformas tecnologicas.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!--BEGIN: Features 
-		<section id="servicios">
-			<article class="page">
-				<div class="row">
-					<div class="span12">
-						<h2 class="page-title">Servicios <a class="to-top scroll-page" href="#home" title="Ir Arriba"><i class="icon-chevron-up"></i></a></h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span4">
-						<div class="well layers">
-							<h3>Amazing Features</h3>
-							<p>This theme has tons of amazing features. Tabs, lightbox, carausel and many more</p>
-						</div>
-					</div>
-					<div class="span4">
-						<div class="well layers">
-							<h3>Responsive</h3>
-							<p>This theme will work on any device any resolution. Cool...isn't it.</p>
-						</div>
-					</div>
-					<div class="span4">
-						<div class="well layers">
-							<h3>Top Notch Support</h3>
-							<p>If you're having any problems, I am ready to help. Totally free support.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span4">
-						<div class="alert alert-info layers">
-							<h5><i class="icon icon-briefcase"></i> Ultimate Theme</h5>
-							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
-					</div>
-					<div class="span4">
-						<div class="alert alert-danger layers">
-							<h5><i class="icon icon-check"></i> Modern Design</h5>
-							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
-					</div>
-					<div class="span4">
-						<div class="alert alert-success layers">
-							<h5><i class="icon icon-align-center"></i> Simple Layout</h5>
-							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
-					</div>
-					<div class="span4">
-						<h5><i class="icon icon-eye-open"></i> Make Standout</h5>
-						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
-					<div class="span4">
-						<h5><i class="icon icon-facetime-video"></i> Attract Visitors</h5>
-						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
-					<div class="span4">
-						<h5><i class="icon icon-edit"></i> Easy to Customize</h5>
-						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</small> </div>
-				</div>
-			</article>
-		</section>-->
-		<!--END: Features --> 
-		
+	@yield('main_container')
+	<!--END: Main Container -->
 		<!--BEGIN: Nosotros -->
 		
 			@yield('nosotros')

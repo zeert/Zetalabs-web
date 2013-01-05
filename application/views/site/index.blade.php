@@ -95,6 +95,22 @@ Zetalabs :: Expertos en Tecnologia
 
 {{--  Carrusel de Imagenes del Home --}}
 
+{{-- BEGIN: Main Section --}}
+@section('main_container')
+<div class="container">
+		<p>&nbsp;</p>
+		<div class="row">
+			<div class="span12">
+				<div class="action layers">
+					<div class="action-inside clearfix">
+						<h2>Zetalabs, desarrollo tecnologico a la medida de tus necesidades.</h2>
+						<p>Estamos preparados para dar solucion a tus inquietudes en <i>seguridad</i>, <i>desarrollo</i>, <i>implementaci&oacute;n</i> y <i>mantenci&oacute;n</i> de tus plataformas tecnol&oacute;gicas.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+@endsection
+{{-- END: Main Section --}}
 {{-- Seccion Nosotros --}}
 
 @section('nosotros')
@@ -108,36 +124,68 @@ Zetalabs :: Expertos en Tecnologia
 						<div class="action layers">
 							<div class="action-inside clearfix">
 								<h2>Somos expertos en Tecnologia.</h2>
-								<p>Si, para nosotros la tecnologia y el desarrollo tecnologico es una forma de vida, por lo mismo, ofrecemos las mejores alternativas para que tu peque&ntilde;a o mediana empresa pueda crecer y desarrollarse, de la mano de las ultimas tecnologias disponibles y asesorada por nuestros expertos.</p>
+								<p>Si, para nosotros la tecnolog&iacute;a y el desarrollo tecnol&oacute;gico es una forma de vida, por lo mismo, ofrecemos las mejores alternativas para que tu peque&ntilde;a o mediana empresa pueda crecer y desarrollarse, de la mano de las ultimas tecnologias disponibles y asesorada por nuestros expertos.</p>
 							</div>
 						</div>
 					</div>
 					<div class="span4">
 						<div class="well layers">
-							<h5>Our client says...</h5>
-							<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
-							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small> </div>
+							<h5>Lo dicen nuestros clientes...</h5>
+
+
+
+							<div class="slidewrap" data-autorotate="5000">
+		<ul class="slidecontrols">
+			<li><a href="#sliderName" class="next">Next</a></li>
+			<li><a href="#sliderName" class="prev">Prev</a></li>
+		</ul>
+		<ul class="slider" id="sliderName">
+			<li class="slide">	
+				<p>1 Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small>
+			</li>
+			<li class="slide">	
+				<p>2 Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small>
+			</li>
+			<li class="slide">	
+				<p>3 Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small>
+			</li>
+			<li class="slide">	
+				<p>4 Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small>
+			</li>
+			<li class="slide">	
+				<p>5 Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small>
+			</li>
+		</ul>
+	</div>
+
+						<!--	<p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster.</p>
+							<a href="#" class="label label-info"><strong>John Miller</strong></a> <small>Vice President</small> | <small>Company Name</small>--> </div>
 					</div>
 				</div>
 				
 				<div class="row">
 					<div class="span4">
-						<h5><i class="icon icon-chevron-right"></i> OUR APPROACH</h5>
+						<h5><i class="icon icon-chevron-right"></i> NUESTRA EXPERTISE</h5>
 						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
 					</div>
 					<div class="span4">
-						<h5><i class="icon icon-chevron-right"></i> METHODOLOGY</h5>
+						<h5><i class="icon icon-chevron-right"></i> METODOLOG&Iacute;A</h5>
 						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
 					</div>
 					<div class="span4">
-						<h5><i class="icon icon-chevron-right"></i> CULTURE</h5>
+						<h5><i class="icon icon-chevron-right"></i> CULTURA</h5>
 						<p><small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
 					</div>
 				</div>
 				
 				<div class="row">
 					<div class="span8">
-						<h3>Team <small class="label label-info">Click on image to lauch detail in modal window.</small></h3>
+						<h3>Equipo <small class="label label-info">Haz click en una imagen para una descripcion mas detallada.</small></h3>
 						<ul class="thumbnails">
 							<li class="span2">
 								<div class="well well-small layers"> <a href="#bio1" class="thumbnail" data-toggle="modal"> <img src="http://placehold.it/160x120" alt=""> </a>
@@ -155,7 +203,7 @@ Zetalabs :: Expertos en Tecnologia
 										<p><img src="http://placehold.it/200x300" alt="" class="team-bigger-pic"> Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. Bootstrap is built for you. This Biz theme is designed to help people of all skill levels designer or developer, huge nerd or early beginner. </p>
 									</div>
 									<div class="modal-footer">
-										<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
 									</div>
 								</div>
 								<!--Modal--> 
